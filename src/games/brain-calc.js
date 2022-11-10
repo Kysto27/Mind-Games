@@ -1,11 +1,36 @@
 import brainGame from '../index.js';
 
-const question = () => Math.round(Math.random() * 100);
+const brainCalcGame = () => {
+  const getQuestionValue = () => {
+    const operators = ['+', '-', '*'];
+    const operand1 = Math.round(Math.random() * 100);
+    const operand2 = Math.round(Math.random() * 100);
+    const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+    return `${operand1} ${randomOperator} ${operand2}`;
+  };
 
-const isEven = (num) => num % 2 === 0;
+  const getExpectedAnswer = (questionValue) => {
+    const expressionToArray = questionValue.split(' ');
+    const [operand1, operator, operand2] = expressionToArray;
+    let result;
+    switch (operator) {
+      case '+':
+        result = +operand1 + +operand2;
+        break;
+      case '-':
+        result = operand1 - operand2;
+        break;
+      case '*':
+        result = operand1 * operand2;
+        break;
+      default:
+    }
+    return result.toString();
+  };
 
-const expectedAnswer = (randomNumber) => (isEven(randomNumber) ? 'yes' : 'no');
+  const gameRules = 'What is the result of the expression?';
 
-const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
+  brainGame(getQuestionValue, getExpectedAnswer, gameRules);
+};
 
-brainGame(question, expectedAnswer, rules);
+export default brainCalcGame;
