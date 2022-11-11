@@ -9,3 +9,6 @@ https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG
 
 ### Brain-calc game record
 https://asciinema.org/a/JtzNVPf7VqxHBpKyWKLx0UwHD
+
+### Brain-gcd game record
+https://asciinema.org/a/qa0bFtoJsgNBbnXecqqXqVktG
