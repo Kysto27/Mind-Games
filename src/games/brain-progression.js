@@ -33,7 +33,12 @@ const brainProgressionGame = () => {
         progressionStep = questionValueToArray[i + 1] - questionValueToArray[i];
       }
     }
-    const result = (+questionValueToArray[progressionHiddenValuePosition - 1] + +progressionStep);
+    let result;
+    if (progressionHiddenValuePosition === 0) {
+      result = (+questionValueToArray[progressionHiddenValuePosition + 1] - +progressionStep);
+    } else {
+      result = (+questionValueToArray[progressionHiddenValuePosition - 1] + +progressionStep);
+    }
     return result.toString();
   };
 
