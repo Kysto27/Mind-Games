@@ -11,12 +11,20 @@ const brainGcdGame = () => {
     const questionValueToArray = questionValue.split(' ');
     let [a, b] = questionValueToArray;
     if (b > a) { const temp = a; a = b; b = temp; }
+    let result;
     while (a !== 0 || b !== 0) {
-      if (b === 0) return a.toString();
+      if (b === 0) {
+        result = a.toString();
+        break;
+      }
       a %= b;
-      if (a === 0) return b.toString();
+      if (a === 0) {
+        result = b.toString();
+        break;
+      }
       b %= a;
     }
+    return result;
   };
 
   const gameRules = 'Find the greatest common divisor of given numbers.';
