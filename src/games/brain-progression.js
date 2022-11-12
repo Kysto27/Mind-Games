@@ -1,14 +1,15 @@
 import brainGame from '../index.js';
 
 const brainProgressionGame = () => {
+  const getProgressionStep = () => {
+    const min = 2;
+    const max = 10;
+    return Math.round(Math.random() * (max - min) + min);
+  };
+
   const getQuestionValue = () => {
     const progression = [];
     let progressionValue = Math.round(Math.random() * 100);
-    const getProgressionStep = () => {
-      const min = 2;
-      const max = 10;
-      return Math.round(Math.random() * (max - min) + min);
-    };
     const progressionStep = getProgressionStep();
     for (let i = 0; i < 10; i += 1) {
       progression.push(progressionValue);
@@ -35,9 +36,13 @@ const brainProgressionGame = () => {
     }
     let result;
     if (progressionHiddenValuePosition === 0) {
-      result = (+questionValueToArray[progressionHiddenValuePosition + 1] - +progressionStep);
+      result =
+        +questionValueToArray[progressionHiddenValuePosition + 1] -
+        +progressionStep;
     } else {
-      result = (+questionValueToArray[progressionHiddenValuePosition - 1] + +progressionStep);
+      result =
+        +questionValueToArray[progressionHiddenValuePosition - 1] +
+        +progressionStep;
     }
     return result.toString();
   };
