@@ -15,3 +15,6 @@ https://asciinema.org/a/qa0bFtoJsgNBbnXecqqXqVktG
 
 ### Brain-progression game record
 https://asciinema.org/a/AVAkv3PfkN8Fq2pKTQpI75nEh
+
+### Brain-prime game record
+https://asciinema.org/a/WA4k4hiDEZL8zd9t2mE6I4l9v
