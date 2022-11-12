@@ -20,24 +20,24 @@ const brainProgressionGame = () => {
   };
 
   const getExpectedAnswer = (questionValue) => {
-    const questionValueToArray = questionValue.split(' ');
+    const questionValueToArr = questionValue.split(' ');
     let progressionHiddenValuePosition;
     let progressionStep;
-    for (let i = 0; i < questionValueToArray.length; i += 1) {
-      if (questionValueToArray[i] === '..') {
+    for (let i = 0; i < questionValueToArr.length; i += 1) {
+      if (questionValueToArr[i] === '..') {
         progressionHiddenValuePosition = i;
       }
     }
-    for (let i = 0; i < questionValueToArray.length; i += 1) {
-      if (questionValueToArray[i + 1] - questionValueToArray[i]) {
-        progressionStep = questionValueToArray[i + 1] - questionValueToArray[i];
+    for (let i = 0; i < questionValueToArr.length; i += 1) {
+      if (questionValueToArr[i + 1] - questionValueToArr[i]) {
+        progressionStep = questionValueToArr[i + 1] - questionValueToArr[i];
       }
     }
     let result;
     if (progressionHiddenValuePosition === 0) {
-      result = (+questionValueToArray[progressionHiddenValuePosition + 1] - +progressionStep);
+      result = (+questionValueToArr[progressionHiddenValuePosition + 1] - +progressionStep);
     } else {
-      result = (+questionValueToArray[progressionHiddenValuePosition - 1] + +progressionStep);
+      result = (+questionValueToArr[progressionHiddenValuePosition - 1] + +progressionStep);
     }
     return result.toString();
   };
