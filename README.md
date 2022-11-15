@@ -30,17 +30,13 @@ npm link
 ```
 brain-even
 ```
-asciicast2gif https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG.json demo.gif
-
 [![asciicast](https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG.svg)](https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG)
 
 ### Калькулятор
 ```
 brain-calc
 ```
-
 [![asciicast](https://asciinema.org/a/JtzNVPf7VqxHBpKyWKLx0UwHD.svg)](https://asciinema.org/a/JtzNVPf7VqxHBpKyWKLx0UwHD)
-
 
 ### Наибольший общий делитель
 ```
@@ -53,7 +49,6 @@ brain-gcd
 brain-progression
 ```
 [![asciicast](https://asciinema.org/a/AVAkv3PfkN8Fq2pKTQpI75nEh.svg)](https://asciinema.org/a/AVAkv3PfkN8Fq2pKTQpI75nEh)
-
 
 ### Простое ли число?
 ```
