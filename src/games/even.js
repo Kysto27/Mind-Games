@@ -1,8 +1,9 @@
 import run from '../index.js';
+import generateRandomNumber from '../rundom-number.js';
 
 const runEven = () => {
   const generateRound = () => {
-    const question = Math.round(Math.random() * 100);
+    const question = generateRandomNumber();
 
     const isEven = (num) => num % 2 === 0;
 

@@ -1,10 +1,11 @@
 import run from '../index.js';
+import generateRandomNumber from '../rundom-number.js';
 
 const runGcd = () => {
   const generateRound = () => {
     const result = [];
-    let a = Math.round(Math.random() * 100);
-    let b = Math.round(Math.random() * 100);
+    let a = generateRandomNumber();
+    let b = generateRandomNumber();
     const question = `${a} ${b}`;
     result.push(question);
 

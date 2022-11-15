@@ -1,8 +1,9 @@
 import run from '../index.js';
+import generateRandomNumber from '../rundom-number.js';
 
 const runPrime = () => {
   const generateRound = () => {
-    const question = Math.round(Math.random() * 100);
+    const question = generateRandomNumber();
 
     const isPrime = (num) => {
       for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {

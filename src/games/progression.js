@@ -1,9 +1,10 @@
 import run from '../index.js';
+import generateRandomNumber from '../rundom-number.js';
 
 const runProgression = () => {
   const generateRound = () => {
     const progression = [];
-    let progressionValue = Math.round(Math.random() * 100);
+    let progressionValue = generateRandomNumber();
 
     const min = 2; // minimum progression step
     const max = 10; // maximum progression step
@@ -15,11 +16,11 @@ const runProgression = () => {
       progressionValue += progressionStep;
     }
 
-    const progressionHiddenValuePosition = Math.round(Math.random() * 9);
+    const hiddenValuePosition = Math.round(Math.random() * 9);
 
-    const answer = progression[progressionHiddenValuePosition].toString();
+    const answer = progression[hiddenValuePosition].toString();
 
-    progression[progressionHiddenValuePosition] = '..';
+    progression[hiddenValuePosition] = '..';
 
     const question = progression.join(' ');
 

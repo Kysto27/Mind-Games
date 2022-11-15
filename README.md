@@ -31,6 +31,7 @@ npm link
 brain-even
 ```
 asciicast2gif https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG.json demo.gif
+
 [![asciicast](https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG.svg)](https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG)
 
 ### Калькулятор
