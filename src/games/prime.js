@@ -3,7 +3,9 @@ import generateRandomNumber from '../utils.js';
 
 const runPrime = () => {
   const generateRound = () => {
-    const question = generateRandomNumber();
+    const minRangeValue = -100;
+    const maxRangeValue = 100;
+    const question = generateRandomNumber(minRangeValue, maxRangeValue);
 
     const isPrime = (num) => {
       for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {

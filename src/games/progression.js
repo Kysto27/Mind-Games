@@ -4,12 +4,13 @@ import generateRandomNumber from '../utils.js';
 const runProgression = () => {
   const generateRound = () => {
     const progression = [];
-    let progressionValue = generateRandomNumber();
+    const minRangeValue = 0;
+    const maxRangeValue = 100;
+    let progressionValue = generateRandomNumber(minRangeValue, maxRangeValue);
 
-    const min = 2; // minimum progression step
-    const max = 10; // maximum progression step
-
-    const progressionStep = Math.round(Math.random() * (max - min) + min);
+    const minProgressionStepValue = 2;
+    const maxProgressionStepValue = 10;
+    const progressionStep = generateRandomNumber(minProgressionStepValue, maxProgressionStepValue);
 
     for (let i = 0; i < 10; i += 1) {
       progression.push(progressionValue);

@@ -4,8 +4,10 @@ import generateRandomNumber from '../utils.js';
 const runGcd = () => {
   const generateRound = () => {
     const result = [];
-    let a = generateRandomNumber();
-    let b = generateRandomNumber();
+    const minRangeValue = 0;
+    const maxRangeValue = 100;
+    let a = generateRandomNumber(minRangeValue, maxRangeValue);
+    let b = generateRandomNumber(minRangeValue, maxRangeValue);
     const question = `${a} ${b}`;
     result.push(question);
 

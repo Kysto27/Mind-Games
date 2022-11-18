@@ -5,8 +5,10 @@ const runCalc = () => {
   const generateRound = () => {
     const operators = ['+', '-', '*'];
     const operator = operators[Math.floor(Math.random() * operators.length)];
-    const operand1 = generateRandomNumber();
-    const operand2 = generateRandomNumber();
+    const minRangeValue = 0;
+    const maxRangeValue = 20;
+    const operand1 = generateRandomNumber(minRangeValue, maxRangeValue);
+    const operand2 = generateRandomNumber(minRangeValue, maxRangeValue);
     const question = `${operand1} ${operator} ${operand2}`;
 
     const calculate = (mathSymbol, num1, num2) => {

@@ -3,7 +3,9 @@ import generateRandomNumber from '../utils.js';
 
 const runEven = () => {
   const generateRound = () => {
-    const question = generateRandomNumber();
+    const minRangeValue = -100;
+    const maxRangeValue = 100;
+    const question = generateRandomNumber(minRangeValue, maxRangeValue);
 
     const isEven = (num) => num % 2 === 0;
 
