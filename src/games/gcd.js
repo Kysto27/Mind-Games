@@ -1,5 +1,5 @@
 import run from '../index.js';
-import generateRandomNumber from '../utils.js';
+import { generateRandomNumber } from '../utils.js';
 
 const generateRound = () => {
   const result = [];
