@@ -1,27 +1,29 @@
 import run from '../index.js';
 import generateRandomNumber from '../utils.js';
 
+const isPrime = (num) => {
+  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return num > 1;
+};
+
+const generateRound = () => {
+  const minRangeValue = -100;
+  const maxRangeValue = 100;
+  const number = generateRandomNumber(minRangeValue, maxRangeValue);
+  const question = number.toString();
+  const answer = isPrime(number) ? 'yes' : 'no';
+
+  return [question, answer];
+};
+
 const runPrime = () => {
-  const generateRound = () => {
-    const minRangeValue = -100;
-    const maxRangeValue = 100;
-    const question = generateRandomNumber(minRangeValue, maxRangeValue);
+  generateRound();
 
-    const isPrime = (num) => {
-      for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
-        if (num % i === 0) return false;
-      }
-      return num > 1;
-    };
+  const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-    const answer = isPrime(question) ? 'yes' : 'no';
-
-    return [question, answer];
-  };
-
-  const gameRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-  run(generateRound, gameRules);
+  run(generateRound, rule);
 };
 
 export default runPrime;
