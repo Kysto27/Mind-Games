@@ -21,11 +21,11 @@ const generateRound = () => {
     progressionValue += progressionStep;
   }
 
-  const hiddenValuePosition = generateRandomIndex(progressionLength - 1);
+  const hiddenValueIndex = generateRandomIndex(progressionLength - 1);
 
-  const answer = progression[hiddenValuePosition].toString();
+  const answer = progression[hiddenValueIndex].toString();
 
-  progression[hiddenValuePosition] = '..';
+  progression[hiddenValueIndex] = '..';
 
   const question = progression.join(' ');
 
