@@ -1,5 +1,5 @@
 import run from '../index.js';
-import generateRandomNumber from '../rundom-number.js';
+import generateRandomNumber from '../utils.js';
 
 const runPrime = () => {
   const generateRound = () => {
