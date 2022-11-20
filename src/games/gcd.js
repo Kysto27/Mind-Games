@@ -1,32 +1,38 @@
 import run from '../index.js';
 import { generateRandomNumber } from '../utils.js';
 
-const generateRound = () => {
-  const result = [];
-  const minRangeValue = 0;
-  const maxRangeValue = 100;
-  let a = generateRandomNumber(minRangeValue, maxRangeValue);
-  let b = generateRandomNumber(minRangeValue, maxRangeValue);
-  const question = `${a} ${b}`;
-  result.push(question);
-
-  let answer;
+const calculateGcd = (num1, num2) => {
+  let result;
+  let a = num1;
+  let b = num2;
   if (b > a) { const temp = a; a = b; b = temp; }
   while (a !== 0 || b !== 0) {
     if (b === 0) {
-      answer = a.toString();
+      result = a.toString();
       break;
     }
     a %= b;
     if (a === 0) {
-      answer = b.toString();
+      result = b.toString();
       break;
     }
     b %= a;
   }
-  result.push(answer);
-
   return result;
+};
+
+const generateRound = () => {
+  const minRangeValue = 0;
+  const maxRangeValue = 100;
+  const number1 = generateRandomNumber(minRangeValue, maxRangeValue);
+  const number2 = generateRandomNumber(minRangeValue, maxRangeValue);
+
+  const question = `${number1} ${number2}`;
+
+  const calculationResult = calculateGcd(number1, number2);
+  const answer = calculationResult.toString();
+
+  return [question, answer];
 };
 
 const runGcd = () => {
