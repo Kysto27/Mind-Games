@@ -16,12 +16,13 @@
 
 ## Минимальные требования
 
-Node.js версии 13 и выше
+Node.js версии 13.2.0 и выше
 
 ## Инструкция по установке
 ```
 make install
-
+```
+```
 npm link
 ```
 ## Инструкция по запуску
@@ -30,28 +31,28 @@ npm link
 ```
 brain-even
 ```
-[![asciicast](https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG.svg)](https://asciinema.org/a/U97DCfnLHaq3AYgatUSN7ihsG)
+[![asciicast](https://asciinema.org/a/qX7tfxRIiDnvY7OMj4ZFyVBYu.svg)](https://asciinema.org/a/qX7tfxRIiDnvY7OMj4ZFyVBYu)
 
 ### Калькулятор
 ```
 brain-calc
 ```
-[![asciicast](https://asciinema.org/a/JtzNVPf7VqxHBpKyWKLx0UwHD.svg)](https://asciinema.org/a/JtzNVPf7VqxHBpKyWKLx0UwHD)
+[![asciicast](https://asciinema.org/a/tt59AIboIoQm7dvLtUd6GzqEq.svg)](https://asciinema.org/a/tt59AIboIoQm7dvLtUd6GzqEq)
 
 ### Наибольший общий делитель
 ```
 brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/qa0bFtoJsgNBbnXecqqXqVktG.svg)](https://asciinema.org/a/qa0bFtoJsgNBbnXecqqXqVktG)
+[![asciicast](https://asciinema.org/a/zyVyUDLXYvUYntgjMMva7mKMq.svg)](https://asciinema.org/a/zyVyUDLXYvUYntgjMMva7mKMq)
 
 ### Арифметическая прогрессия
 ```
 brain-progression
 ```
-[![asciicast](https://asciinema.org/a/AVAkv3PfkN8Fq2pKTQpI75nEh.svg)](https://asciinema.org/a/AVAkv3PfkN8Fq2pKTQpI75nEh)
+[![asciicast](https://asciinema.org/a/aUwVv0TzeUBBTMh27fz5DtDSw.svg)](https://asciinema.org/a/aUwVv0TzeUBBTMh27fz5DtDSw)
 
 ### Простое ли число?
 ```
 brain-prime
 ```
-[![asciicast](https://asciinema.org/a/WA4k4hiDEZL8zd9t2mE6I4l9v.svg)](https://asciinema.org/a/WA4k4hiDEZL8zd9t2mE6I4l9v)
+[![asciicast](https://asciinema.org/a/1aiFWxDBnVRG6aKdOLC73eXr5.svg)](https://asciinema.org/a/1aiFWxDBnVRG6aKdOLC73eXr5)
