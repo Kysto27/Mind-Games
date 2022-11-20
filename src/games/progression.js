@@ -21,7 +21,8 @@ const generateRound = () => {
     progressionValue += progressionStep;
   }
 
-  const hiddenValueIndex = generateRandomIndex(progressionLength - 1);
+  const maxIndexValue = progressionLength - 1;
+  const hiddenValueIndex = generateRandomIndex(maxIndexValue);
 
   const answer = progression[hiddenValueIndex].toString();
 

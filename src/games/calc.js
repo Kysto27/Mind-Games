@@ -20,11 +20,14 @@ const calculate = (mathSymbol, num1, num2) => {
 
 const generateRound = () => {
   const operators = ['+', '-', '*'];
-  const operator = operators[generateRandomIndex(operators.length - 1)];
+  const maxIndexValue = operators.length - 1;
+  const operator = operators[generateRandomIndex(maxIndexValue)];
+
   const minRangeValue = 1;
   const maxRangeValue = 20;
   const operand1 = generateRandomNumber(minRangeValue, maxRangeValue);
   const operand2 = generateRandomNumber(minRangeValue, maxRangeValue);
+
   const question = `${operand1} ${operator} ${operand2}`;
 
   const calculationResult = calculate(operator, operand1, operand2);
