@@ -34,10 +34,7 @@ const generateRound = () => {
 };
 
 const runProgression = () => {
-  generateRound();
-
   const rule = 'What number is missing in the progression?';
-
   run(generateRound, rule);
 };
 

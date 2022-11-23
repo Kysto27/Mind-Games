@@ -14,10 +14,7 @@ const generateRound = () => {
 };
 
 const runEven = () => {
-  generateRound();
-
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
-
   run(generateRound, rule);
 };
 

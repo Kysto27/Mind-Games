@@ -36,10 +36,7 @@ const generateRound = () => {
 };
 
 const runGcd = () => {
-  generateRound();
-
   const rule = 'Find the greatest common divisor of given numbers.';
-
   run(generateRound, rule);
 };
 

@@ -19,10 +19,7 @@ const generateRound = () => {
 };
 
 const runPrime = () => {
-  generateRound();
-
   const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
   run(generateRound, rule);
 };
 

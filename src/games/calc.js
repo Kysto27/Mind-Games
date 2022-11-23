@@ -38,10 +38,7 @@ const generateRound = () => {
 };
 
 const runCalc = () => {
-  generateRound();
-
   const rule = 'What is the result of the expression?';
-
   run(generateRound, rule);
 };
 
