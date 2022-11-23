@@ -2,6 +2,8 @@ import run from '../index.js';
 import { generateRandomNumber } from '../utils.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
+const minNumber = 0;
+const maxNumber = 100;
 
 const calculateGcd = (num1, num2) => {
   let result;
@@ -10,12 +12,12 @@ const calculateGcd = (num1, num2) => {
   if (b > a) { const temp = a; a = b; b = temp; }
   while (a !== 0 || b !== 0) {
     if (b === 0) {
-      result = a.toString();
+      result = a;
       break;
     }
     a %= b;
     if (a === 0) {
-      result = b.toString();
+      result = b;
       break;
     }
     b %= a;
@@ -24,13 +26,10 @@ const calculateGcd = (num1, num2) => {
 };
 
 const generateRound = () => {
-  const minRangeValue = 0;
-  const maxRangeValue = 100;
-  const number1 = generateRandomNumber(minRangeValue, maxRangeValue);
-  const number2 = generateRandomNumber(minRangeValue, maxRangeValue);
+  const number1 = generateRandomNumber(minNumber, maxNumber);
+  const number2 = generateRandomNumber(minNumber, maxNumber);
   const question = `${number1} ${number2}`;
-  const calculationResult = calculateGcd(number1, number2);
-  const answer = calculationResult.toString();
+  const answer = calculateGcd(number1, number2).toString();
 
   return [question, answer];
 };

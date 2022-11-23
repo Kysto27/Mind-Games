@@ -2,6 +2,8 @@ import run from '../index.js';
 import { generateRandomNumber } from '../utils.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const minNumber = -100;
+const maxNumber = 100;
 
 const isPrime = (num) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
@@ -11,9 +13,7 @@ const isPrime = (num) => {
 };
 
 const generateRound = () => {
-  const minRangeValue = -100;
-  const maxRangeValue = 100;
-  const number = generateRandomNumber(minRangeValue, maxRangeValue);
+  const number = generateRandomNumber(minNumber, maxNumber);
   const question = number.toString();
   const answer = isPrime(number) ? 'yes' : 'no';
 
