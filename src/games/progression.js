@@ -1,6 +1,8 @@
 import run from '../index.js';
 import { generateRandomNumber, generateRandomIndex } from '../utils.js';
 
+const rule = 'What number is missing in the progression?';
+
 const generateRound = () => {
   const progression = [];
 
@@ -21,8 +23,7 @@ const generateRound = () => {
     progressionValue += progressionStep;
   }
 
-  const maxIndexValue = progressionLength - 1;
-  const hiddenValueIndex = generateRandomIndex(maxIndexValue);
+  const hiddenValueIndex = generateRandomIndex(progression);
 
   const answer = progression[hiddenValueIndex].toString();
 
@@ -33,9 +34,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runProgression = () => {
-  const rule = 'What number is missing in the progression?';
-  run(generateRound, rule);
-};
+const runProgression = () => run(generateRound, rule);
 
 export default runProgression;
