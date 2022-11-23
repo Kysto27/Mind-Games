@@ -5,20 +5,15 @@ const operators = ['+', '-', '*'];
 const rule = 'What is the result of the expression?';
 
 const calculate = (operator, x, y) => {
-  let result;
   switch (operator) {
     case '+':
-      result = +x + +y;
-      break;
+      return +x + +y;
     case '-':
-      result = x - y;
-      break;
+      return x - y;
     case '*':
-      result = x * y;
-      break;
+      return x * y;
     default:
   }
-  return result;
 };
 
 const generateRound = () => {
