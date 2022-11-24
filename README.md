@@ -31,28 +31,28 @@ npm link
 ```
 brain-even
 ```
-[![asciicast](https://asciinema.org/a/qX7tfxRIiDnvY7OMj4ZFyVBYu.svg)](https://asciinema.org/a/qX7tfxRIiDnvY7OMj4ZFyVBYu)
+[![asciicast](https://asciinema.org/a/NVkvVwF4DU3Cv4J4djBo0w6y2.svg)](https://asciinema.org/a/NVkvVwF4DU3Cv4J4djBo0w6y2)
 
 ### Калькулятор
 ```
 brain-calc
 ```
-[![asciicast](https://asciinema.org/a/tt59AIboIoQm7dvLtUd6GzqEq.svg)](https://asciinema.org/a/tt59AIboIoQm7dvLtUd6GzqEq)
+[![asciicast](https://asciinema.org/a/yj3pwYgBb5zbN6sGdq0aKbARG.svg)](https://asciinema.org/a/yj3pwYgBb5zbN6sGdq0aKbARG)
 
 ### Наибольший общий делитель
 ```
 brain-gcd
 ```
-[![asciicast](https://asciinema.org/a/zyVyUDLXYvUYntgjMMva7mKMq.svg)](https://asciinema.org/a/zyVyUDLXYvUYntgjMMva7mKMq)
+[![asciicast](https://asciinema.org/a/EbrS51ya0yRxLwwCibUfEJPVK.svg)](https://asciinema.org/a/EbrS51ya0yRxLwwCibUfEJPVK)
 
 ### Арифметическая прогрессия
 ```
 brain-progression
 ```
-[![asciicast](https://asciinema.org/a/aUwVv0TzeUBBTMh27fz5DtDSw.svg)](https://asciinema.org/a/aUwVv0TzeUBBTMh27fz5DtDSw)
+[![asciicast](https://asciinema.org/a/D8JIlZfnDYBldegFpo2D2njC0.svg)](https://asciinema.org/a/D8JIlZfnDYBldegFpo2D2njC0)
 
 ### Простое ли число?
 ```
 brain-prime
 ```
-[![asciicast](https://asciinema.org/a/1aiFWxDBnVRG6aKdOLC73eXr5.svg)](https://asciinema.org/a/1aiFWxDBnVRG6aKdOLC73eXr5)
+[![asciicast](https://asciinema.org/a/VsxYVIEgV1uTLcKZZqkimJcKW.svg)](https://asciinema.org/a/VsxYVIEgV1uTLcKZZqkimJcKW)

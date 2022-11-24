@@ -12,8 +12,8 @@ const maxStep = 10;
 const generateRound = () => {
   const progression = [];
   const length = generateRandomNumber(minLength, maxLength);
-  let start = generateRandomNumber(minStart, maxStart);
   const step = generateRandomNumber(minStep, maxStep);
+  let start = generateRandomNumber(minStart, maxStart);
 
   for (let i = 0; i < length; i += 1) {
     progression.push(start);
