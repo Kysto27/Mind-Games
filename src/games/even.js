@@ -15,6 +15,8 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runEven = () => run(generateRound, rule);
+const runEven = () => {
+  run(generateRound, rule);
+};
 
 export default runEven;

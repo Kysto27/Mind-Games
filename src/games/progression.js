@@ -27,6 +27,8 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runProgression = () => run(generateRound, rule);
+const runProgression = () => {
+  run(generateRound, rule);
+};
 
 export default runProgression;

@@ -34,6 +34,8 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runGcd = () => run(generateRound, rule);
+const runGcd = () => {
+  run(generateRound, rule);
+};
 
 export default runGcd;

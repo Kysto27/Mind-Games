@@ -29,6 +29,8 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const runCalc = () => run(generateRound, rule);
+const runCalc = () => {
+  run(generateRound, rule);
+};
 
 export default runCalc;
