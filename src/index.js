@@ -6,12 +6,10 @@ const run = (generateRound, rule) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
+  console.log(rule);
 
   for (let i = 0; i < roundsCount; i += 1) {
     const [question, correctAnswer] = generateRound();
-    if (i === 0) {
-      console.log(rule);
-    }
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
