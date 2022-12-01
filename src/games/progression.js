@@ -12,10 +12,8 @@ const maxStep = 10;
 
 const generateProgression = (length, start, step) => {
   const progression = [];
-  let term = start;
   for (let i = 0; i < length; i += 1) {
-    progression.push(term);
-    term += step;
+    progression[i] = start + step * i;
   }
   return progression;
 };
